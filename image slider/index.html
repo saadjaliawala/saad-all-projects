@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Image Slider </title>
+    
+</head>
+<body>
+    
+        <div  id="myTV" >
+
+            <div id="myScreen" >
+            
+            
+            
+            </div>
+            </div>
+
+
+
+    <script >
+    var myScreen = document.getElementById('myScreen');
+    var myPics = ['pic1.jpg', 'pic2.jpg', 'pic3.jpg'];
+    var totalPics = myPics.length;
+    var i = 0;
+
+    function loop(){
+    if (i > (totalPics - 1)){
+        i = 0;
+    }
+        myScreen.innerHTML = '<img src = "screen_pics/' +myPics[i]+'">';
+        i++;
+
+        loopTimer = setTimeout('loop()',3000);
+    }
+
+    loop();
+    
+    
+    
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <script src="app.js"></script>
+    <title>Todo App</title>
+</head>
+<body>
+    <div id="todo">
+        <h1>Todo App </h1>
+        <div class="inputbox">
+            <input type="text" name="task here" placeholder="Typer your Task Here" id="input">
+            <button class="add" onclick="addTodo()">Add Todo</button>
+        </div>
+        <div id="list">
+            <h3 id="heading"></h3>
+            <ul id="todo_list">
+            </ul>
+        </div>
+        <div id="bin">
+            <button class="del" onclick="removed()">Delete All</button>
+        </div>
+    </div>
+</body>
+</html>
